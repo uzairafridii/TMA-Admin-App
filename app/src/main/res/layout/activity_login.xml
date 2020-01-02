@@ -81,6 +81,17 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/remember_me"
+                android:layout_below="@id/passwordTextInputLayout"
+                android:text="@string/remember_me"
+                android:layout_marginTop="@dimen/recycler_view_margin"
+
+
+                />
+
             <!-- Button login -->
             <Button
 
@@ -91,7 +102,7 @@
                 android:onClick="loginBtnClick"
                 android:backgroundTint="@color/btn_bg_color"
                 android:layout_centerHorizontal="true"
-                android:layout_below="@+id/passwordTextInputLayout"
+                android:layout_below="@+id/remember_me"
                 android:gravity="center"
                 android:layout_marginTop="@dimen/margin_login_card_view"
                 android:layout_marginLeft="@dimen/edit_text_margin"

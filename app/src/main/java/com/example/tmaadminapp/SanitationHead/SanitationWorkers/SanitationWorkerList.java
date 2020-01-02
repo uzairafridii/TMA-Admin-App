@@ -2,6 +2,8 @@ package com.example.tmaadminapp.SanitationHead.SanitationWorkers;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.AlertDialog;
 import android.os.Bundle;
@@ -12,19 +14,44 @@ import android.widget.TextView;
 
 import com.example.tmaadminapp.R;
 
+import java.util.ArrayList;
+
 public class SanitationWorkerList extends AppCompatActivity {
 
     private Toolbar mToolbar;
+    private RecyclerView workerListRecycler;
+    private ArrayList<ModelForWorkerList> listOfWorker;
+    private AdapterForWorkerList adapter;
+    private LinearLayoutManager layoutManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sanitation_worker_list);
+
         initViews();
+        addItems();
+
+        workerListRecycler.setAdapter(adapter);
+
+
 
     }
 
     private void initViews()
     {
+        //recycler view
+        workerListRecycler = findViewById(R.id.sanitationWorkerList);
+        layoutManager = new LinearLayoutManager(this);
+        workerListRecycler.setLayoutManager(layoutManager);
+
+
+        // array list
+        listOfWorker = new ArrayList<>();
+
+        // adapter
+        adapter = new AdapterForWorkerList(listOfWorker , this);
+
+        // toolbar
         mToolbar = findViewById(R.id.sanitation_worker_list_tool_bar);
         setSupportActionBar(mToolbar);
         setTitle("Worker List");
@@ -48,4 +75,16 @@ public class SanitationWorkerList extends AppCompatActivity {
 
 
     }
+
+
+    // add items to recycler view
+     private void addItems()
+     {
+          listOfWorker.add(new ModelForWorkerList("Asad" , 3.2f));
+          listOfWorker.add(new ModelForWorkerList("Khan" , 2.7f));
+          listOfWorker.add(new ModelForWorkerList("Asif" , 2.3f));
+          listOfWorker.add(new ModelForWorkerList("Uzair" , 5f));
+          listOfWorker.add(new ModelForWorkerList("Dr" , 3.8f));
+          listOfWorker.add(new ModelForWorkerList("Afridi" , 4f));
+     }
 }

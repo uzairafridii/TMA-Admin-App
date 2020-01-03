@@ -1,11 +1,13 @@
 package com.example.tmaadminapp.SanitationHead.SanitationWorkers;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RatingBar;
 import android.widget.TextView;
@@ -72,7 +74,26 @@ public class AdapterForWorkerList extends RecyclerView.Adapter<AdapterForWorkerL
                                 break;
 
                             case R.id.edit:
-                                //handle menu3 click
+                                // inflate edit worker layout
+                                View myView = LayoutInflater.from(ctx).inflate(R.layout.edit_worker_layout, null);
+                                AlertDialog.Builder alertBuilder = new AlertDialog.Builder(ctx);
+                                alertBuilder.setView(myView);
+
+                                final AlertDialog dialog = alertBuilder.create();
+                                dialog.setCanceledOnTouchOutside(false);
+                                dialog.setCancelable(false);
+
+                                Button btn = myView.findViewById(R.id.update_worker_btn_in_update_layout);
+                                // click on update button in update layout
+                                btn.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+
+                                        dialog.cancel();
+                                    }
+                                });
+                                dialog.show();
+
                                 break;
                         }
                         return false;

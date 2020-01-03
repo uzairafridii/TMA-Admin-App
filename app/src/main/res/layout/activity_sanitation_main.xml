@@ -63,6 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/sanitation_tool_bar"
         android:id="@+id/complaintCardViewInSanitation"
+        android:onClick="clickOnComplaintsCardView"
         android:clickable="true"
         android:foreground="?android:attr/selectableItemBackground"
         android:layout_alignParentRight="true"

@@ -10,6 +10,7 @@ import android.view.View;
 
 import com.example.tmaadminapp.NewsFeed.NewsFeedActivity.NewsFeedActivity;
 import com.example.tmaadminapp.R;
+import com.example.tmaadminapp.SanitationHead.SanitationComplaints.Complaints;
 import com.example.tmaadminapp.SanitationHead.SanitationWorkers.SanitationWorkerList;
 
 public class SanitationMain extends AppCompatActivity {
@@ -39,5 +40,10 @@ public class SanitationMain extends AppCompatActivity {
     public void clickOnWorkerListCard(View view)
     {
         startActivity(new Intent(SanitationMain.this , SanitationWorkerList.class));
+    }
+
+    public void clickOnComplaintsCardView(View view)
+    {
+        startActivity(new Intent(SanitationMain.this , Complaints.class));
     }
 }

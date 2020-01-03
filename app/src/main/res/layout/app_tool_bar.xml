@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/sign_in_txt_color"
-    app:titleTextColor="#fff"
-    style="@style/Widget.AppCompat.Toolbar">
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:titleMarginStart="@dimen/edit_text_margin">
 
 </androidx.appcompat.widget.Toolbar>

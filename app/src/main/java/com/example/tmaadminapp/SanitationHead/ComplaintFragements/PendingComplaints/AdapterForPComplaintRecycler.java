@@ -1,6 +1,7 @@
-package com.example.tmaadminapp.SanitationHead.ComplaintFragements;
+package com.example.tmaadminapp.SanitationHead.ComplaintFragements.PendingComplaints;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -14,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.tmaadminapp.R;
+import com.example.tmaadminapp.SanitationHead.ComplaintFragements.CompletedComplaints.AddCompletedWorkOnComplaint;
 
 import java.util.ArrayList;
 
@@ -51,7 +53,7 @@ public class AdapterForPComplaintRecycler extends RecyclerView.Adapter<AdapterFo
             public void onClick(View view) {
 
                 PopupMenu popupMenu = new PopupMenu(ctx , holder.optionMenuBtn);
-                popupMenu.inflate(R.menu.option_menu);
+                popupMenu.inflate(R.menu.option_menu_for_sanitation_complaints);
 
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
@@ -59,8 +61,15 @@ public class AdapterForPComplaintRecycler extends RecyclerView.Adapter<AdapterFo
                     {
                         switch (menuItem.getItemId())
                         {
-                            case R.id.delete:
+                            case R.id.moveToInfrastructure:
                             {
+
+                                break;
+                            }
+
+                            case R.id.completed:
+                            {
+                                ctx.startActivity(new Intent(ctx , AddCompletedWorkOnComplaint.class));
                                 break;
                             }
 

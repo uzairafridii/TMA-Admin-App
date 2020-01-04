@@ -25,4 +25,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title">Title</string>
     <string name="status_of_complaints">Status</string>
+    <string name="first_worker_name">First Worker Name</string>
+    <string name="second_worker_name">Second Worker Name</string>
+    <string name="completed">Completed</string>
+    <string name="move_to_infrastructure">Move to Infrastructure</string>
 </resources>

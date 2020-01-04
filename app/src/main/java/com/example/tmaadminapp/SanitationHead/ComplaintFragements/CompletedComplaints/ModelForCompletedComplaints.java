@@ -1,12 +1,11 @@
-package com.example.tmaadminapp.SanitationHead.ComplaintFragements;
+package com.example.tmaadminapp.SanitationHead.ComplaintFragements.CompletedComplaints;
 
-public class ModelForPendingComplaints
+public class ModelForCompletedComplaints
 {
-    private String titleOfPComplaints , descriptionOfPComplaints , statusOfPComplaints , dataAndTimeOfPComplaints;
+    private String titleOfPComplaints , statusOfPComplaints , dataAndTimeOfPComplaints;
 
-    public ModelForPendingComplaints(String titleOfPComplaints, String descriptionOfPComplaints, String statusOfPComplaints, String dataAndTimeOfPComplaints) {
+    public ModelForCompletedComplaints(String titleOfPComplaints, String statusOfPComplaints, String dataAndTimeOfPComplaints) {
         this.titleOfPComplaints = titleOfPComplaints;
-        this.descriptionOfPComplaints = descriptionOfPComplaints;
         this.statusOfPComplaints = statusOfPComplaints;
         this.dataAndTimeOfPComplaints = dataAndTimeOfPComplaints;
     }
@@ -17,14 +16,6 @@ public class ModelForPendingComplaints
 
     public void setTitleOfPComplaints(String titleOfPComplaints) {
         this.titleOfPComplaints = titleOfPComplaints;
-    }
-
-    public String getDescriptionOfPComplaints() {
-        return descriptionOfPComplaints;
-    }
-
-    public void setDescriptionOfPComplaints(String descriptionOfPComplaints) {
-        this.descriptionOfPComplaints = descriptionOfPComplaints;
     }
 
     public String getStatusOfPComplaints() {

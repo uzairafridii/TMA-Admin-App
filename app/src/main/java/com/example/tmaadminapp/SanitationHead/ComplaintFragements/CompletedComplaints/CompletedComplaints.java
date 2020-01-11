@@ -52,7 +52,7 @@ public class CompletedComplaints extends Fragment {
 
     private void initViews()
     {
-        listOfCompletedComplaints = completedComplaintViews.findViewById(R.id.pendingComplaintsListOfSanitation);
+        listOfCompletedComplaints = completedComplaintViews.findViewById(R.id.completedComplaintsListOfSanitation);
         listOfCompletedComplaints.setLayoutManager(new LinearLayoutManager(getContext()));
 
         arrayList  = new ArrayList<>();

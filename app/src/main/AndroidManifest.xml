@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SanitationHead.ComplaintFragements.CompletedComplaints.AddCompletedWorkOnComplaint"></activity>
+        <activity android:name=".InfrastructureHead.InfraComplaints.InfraComplaints"></activity>
+        <activity android:name=".InfrastructureHead.InfraWorkerList.WorkersListActivity" />
+        <activity android:name=".InfrastructureHead.InfraHome.InfraHome" />
+        <activity android:name=".SanitationHead.ComplaintFragements.CompletedComplaints.AddCompletedWorkOnComplaint" />
         <activity android:name=".SanitationHead.SanitationComplaints.Complaints" />
         <activity android:name=".SanitationHead.SanitationWorkers.WorkerDetailActivity" />
         <activity android:name=".SanitationHead.SanitationWorkers.SanitationWorkerList" />

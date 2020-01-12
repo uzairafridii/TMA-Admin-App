@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InfrastructureHead.InfraComplaints.InfraComplaints"></activity>
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".InfrastructureHead.InfraComplaints.InfraComplaints" />
         <activity android:name=".InfrastructureHead.InfraWorkerList.WorkersListActivity" />
         <activity android:name=".InfrastructureHead.InfraHome.InfraHome" />
         <activity android:name=".SanitationHead.ComplaintFragements.CompletedComplaints.AddCompletedWorkOnComplaint" />
@@ -19,11 +26,7 @@
         <activity android:name=".NewsFeed.NewsFeedActivity.NewsFeedActivity" />
         <activity android:name=".SanitationHead.SanitationHome.SanitationMain" />
         <activity android:name=".Login.LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
     </application>

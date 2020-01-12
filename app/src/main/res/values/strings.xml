@@ -29,4 +29,6 @@
     <string name="second_worker_name">Second Worker Name</string>
     <string name="completed">Completed</string>
     <string name="move_to_infrastructure">Move to Infrastructure</string>
+    <string name="enter_driver_name">Enter Driver Name</string>
+    <string name="fire_fighting">Fire Fighting</string>
 </resources>

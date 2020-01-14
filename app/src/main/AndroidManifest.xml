@@ -9,6 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Administration.AdminStaffManagement.RegulationInStaffManagment.RegulationInStaffManagement"></activity>
+        <activity android:name=".Administration.AdminStaffManagement.AppointAndRetireInStaffManagement.AppointAndRetireDetails" />
+        <activity android:name=".Administration.AdminStaffManagement.StaffManagementHome.StaffManagementHome" />
+        <activity android:name=".Administration.AdminStaffManagement.WorkerListInAdminPage.WorkersListActivityInAdmin" />
+        <activity android:name=".Administration.AdminStaffManagement.WorkerHeadList.WorkerHeadList" />
+        <activity android:name=".Administration.AdminHome.AdminHome" />
+        <activity android:name=".InfrastructureHead.BuildingNoc.BuildingNocActivity" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,9 +32,7 @@
         <activity android:name=".SanitationHead.SanitationWorkers.SanitationWorkerList" />
         <activity android:name=".NewsFeed.NewsFeedActivity.NewsFeedActivity" />
         <activity android:name=".SanitationHead.SanitationHome.SanitationMain" />
-        <activity android:name=".Login.LoginActivity">
-
-        </activity>
+        <activity android:name=".Login.LoginActivity" />
         <activity android:name=".MainActivity" />
     </application>
 

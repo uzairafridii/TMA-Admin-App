@@ -38,7 +38,7 @@ public class InfraCompletedComplaints extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        completedComplaintViews = inflater.inflate(R.layout.fragment_completed_complaints2, container, false);
+        completedComplaintViews = inflater.inflate(R.layout.fragment_infra_completed_complaints, container, false);
 
         initViews();
 

@@ -31,4 +31,9 @@
     <string name="move_to_infrastructure">Move to Infrastructure</string>
     <string name="enter_driver_name">Enter Driver Name</string>
     <string name="fire_fighting">Fire Fighting</string>
+    <string name="finance">Finance</string>
+    <string name="complaints">Complaints</string>
+    <string name="regulation">Regulation</string>
+    <string name="appoint_and_retire"><![CDATA[Appoint &\nRetire Details]]></string>
+    <string name="workers_head">Workers Head</string>
 </resources>

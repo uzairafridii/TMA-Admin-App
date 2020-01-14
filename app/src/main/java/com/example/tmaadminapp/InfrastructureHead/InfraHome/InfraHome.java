@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.tmaadminapp.InfrastructureHead.BuildingNoc.BuildingNocActivity;
 import com.example.tmaadminapp.InfrastructureHead.InfraComplaints.InfraComplaints;
 import com.example.tmaadminapp.InfrastructureHead.InfraWorkerList.WorkersListActivity;
 import com.example.tmaadminapp.NewsFeed.NewsFeedActivity.NewsFeedActivity;
@@ -71,5 +72,10 @@ public class InfraHome extends AppCompatActivity {
             }
         });
         dialog.show();
+    }
+
+    public void clickOnBuildingNoc(View view)
+    {
+        startActivity(new Intent(this, BuildingNocActivity.class));
     }
 }

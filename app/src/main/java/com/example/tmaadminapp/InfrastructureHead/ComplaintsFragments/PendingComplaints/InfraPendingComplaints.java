@@ -12,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.tmaadminapp.R;
-import com.example.tmaadminapp.SanitationHead.ComplaintFragements.PendingComplaints.AdapterForPComplaintRecycler;
 import com.example.tmaadminapp.SanitationHead.ComplaintFragements.PendingComplaints.ModelForPendingComplaints;
 
 import java.text.DateFormat;
@@ -39,7 +38,7 @@ public class InfraPendingComplaints extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        pComplaintsView = inflater.inflate(R.layout.fragment_pending_complaints2, container, false);
+        pComplaintsView = inflater.inflate(R.layout.fragment_infra_pending_complaints, container, false);
 
         initViews();
         setItemsInRecyclerView();

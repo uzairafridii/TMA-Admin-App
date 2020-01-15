@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.tmaadminapp.Administration.AdminStaffManagement.StaffManagementHome.StaffManagementHome;
+import com.example.tmaadminapp.InfrastructureHead.InfraHome.InfraHome;
 import com.example.tmaadminapp.R;
+import com.example.tmaadminapp.SanitationHead.SanitationHome.SanitationMain;
 
 public class AdminHome extends AppCompatActivity {
 
@@ -17,10 +19,15 @@ public class AdminHome extends AppCompatActivity {
         setContentView(R.layout.activity_admin_home);
     }
 
-    public void complaintCardClick(View view) {
+    public void complaintCardClick(View view)
+    {
+        startActivity(new Intent(this , SanitationMain.class));
     }
 
-    public void financeCardClick(View view) {
+
+    public void financeCardClick(View view)
+    {
+        startActivity(new Intent(this , InfraHome.class));
     }
 
     public void staffManagementCardClick(View view)

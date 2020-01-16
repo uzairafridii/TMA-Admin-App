@@ -36,4 +36,5 @@
     <string name="regulation">Regulation</string>
     <string name="appoint_and_retire"><![CDATA[Appoint &\nRetire Details]]></string>
     <string name="workers_head">Workers Head</string>
+    <string name="description">Description</string>
 </resources>

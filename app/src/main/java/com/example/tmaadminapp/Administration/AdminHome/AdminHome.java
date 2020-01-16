@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.tmaadminapp.Administration.AdminStaffManagement.StaffManagementHome.StaffManagementHome;
+import com.example.tmaadminapp.Administration.NewsFeedForAdmin.NewsFeedForAdmin;
 import com.example.tmaadminapp.InfrastructureHead.InfraHome.InfraHome;
 import com.example.tmaadminapp.R;
 import com.example.tmaadminapp.SanitationHead.SanitationHome.SanitationMain;
@@ -37,6 +38,8 @@ public class AdminHome extends AppCompatActivity {
     }
 
 
-    public void newsFeedCardClick(View view) {
+    public void newsFeedCardClick(View view)
+    {
+        startActivity(new Intent(this, NewsFeedForAdmin.class));
     }
 }

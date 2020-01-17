@@ -40,6 +40,7 @@ public class WorkersListActivityInAdmin extends AppCompatActivity {
         //tool bar
         mToolbar = findViewById(R.id.tool_bar_in_admin_page);
         setSupportActionBar(mToolbar);
+        setTitle("Worker List");
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

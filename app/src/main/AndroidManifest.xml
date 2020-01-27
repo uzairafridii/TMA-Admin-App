@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Administration.NewsFeedForAdmin.NewsFeedForAdmin"></activity>
+        <activity android:name=".UnionCouncilHead.UcMain"></activity>
+        <activity android:name=".UnionCouncilHead.UnionCouncil" />
+        <activity android:name=".Administration.NewsFeedForAdmin.NewsFeedForAdmin" />
         <activity android:name=".Administration.AdminStaffManagement.RegulationInStaffManagment.RegulationInStaffManagement" />
         <activity android:name=".Administration.AdminStaffManagement.AppointAndRetireInStaffManagement.AppointAndRetireDetails" />
         <activity android:name=".Administration.AdminStaffManagement.StaffManagementHome.StaffManagementHome" />

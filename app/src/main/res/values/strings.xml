@@ -37,4 +37,7 @@
     <string name="appoint_and_retire"><![CDATA[Appoint &\nRetire Details]]></string>
     <string name="workers_head">Workers Head</string>
     <string name="description">Description</string>
+    <string name="uc_lachi">Birth Certificates</string>
+    <string name="uc_darmalak">Death Certificates</string>
+    <string name="uc_sudal">Marriage Certificates</string>
 </resources>

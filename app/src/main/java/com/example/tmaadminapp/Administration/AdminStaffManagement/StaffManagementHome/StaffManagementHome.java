@@ -11,6 +11,7 @@ import com.example.tmaadminapp.Administration.AdminStaffManagement.RegulationInS
 import com.example.tmaadminapp.Administration.AdminStaffManagement.WorkerHeadList.WorkerHeadList;
 import com.example.tmaadminapp.Administration.AdminStaffManagement.WorkerListInAdminPage.WorkersListActivityInAdmin;
 import com.example.tmaadminapp.R;
+import com.example.tmaadminapp.UnionCouncilHead.UnionCouncil;
 
 public class StaffManagementHome extends AppCompatActivity {
 
@@ -37,6 +38,6 @@ public class StaffManagementHome extends AppCompatActivity {
 
     public void clickOnRegulationCard(View view)
     {
-       startActivity(new Intent(this , RegulationInStaffManagement.class));
+       startActivity(new Intent(this , UnionCouncil.class));
     }
 }
